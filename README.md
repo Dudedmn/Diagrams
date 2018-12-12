@@ -6,65 +6,66 @@
 
 
 
-Movie Store Inventory Manager
-Design Document
+# Movie Store Inventory Manager Design Document
 
 
 
 
 
-Team #7: Taco
-Melroy Ranon D'Souza
-Allen Fulmer
-Ginger A Rabun
-Daniel L Yan
-Table of Contents
-1. Overview	3
-2. Design Requirements	3
-2.1 Input Files	3
-‘data4movies.txt’	3
-‘data4customers.txt’	4
-‘data4commands.txt’	4
-2.2 Movie Genres	5
-Comedy (‘F’ for funny)	5
-Drama (‘D’)	5
-Classics (‘C’)	5
-2.3 System Actions	5
-Borrow (‘B’)	5
-Return (‘R’)	6
-Inventory (‘I’)	6
-History (‘H’)	6
-3. UML Diagram	7
-3.1 Class Diagram	7
-3.2 UML Alternative Design	8
-4. Class Interactions	9
-4.1 Class Descriptions	10
-MovieStore?	10
-CommandParse	10
-Customer	11
-Operation	11
-Return	11
-Borrow	11
-History	11
-Inventory	12
-MovieFactory	12
-ComedyFactory	12
-DramaFactory	12
-ClassicFactory	12
-Movie	12
-ComedyMovie	12
-DramaMovie	12
-ClassicMovie	13
-4.2 Use Cases	13
-Check Inventory	13
-Access Customer History	13
-Borrow a Movie	13
-Return a Movie	13
-4.3 Program Flow	13
-5. Error Handling	15
-6. Main Description	15
-7. Header Files	15
-8. Future Extensions	17
+## Authors:
+Melroy Ranon D'Souza  
+Allen Fulmer  
+Ginger A Rabun  
+Daniel L Yan  
+
+## Table of Contents
+1. Overview    
+2. Design Requirements    
+2.1 Input Files  
+‘data4movies.txt’    	
+‘data4customers.txt’    	
+‘data4commands.txt’  	
+2.2 Movie Genres  	
+Comedy (‘F’ for funny)    	
+Drama (‘D’)  
+Classics (‘C’)    	
+2.3 System Actions    	
+Borrow (‘B’)  
+Return (‘R’)  	
+Inventory (‘I’)   
+History (‘H’)  
+3. UML Diagram  
+3.1 Class Diagram  
+3.2 UML Alternative Design  
+4. Class Interactions  
+4.1 Class Descriptions  
+
+      MovieStore   
+                CommandParse  
+		Customer  
+		Operation  
+			Return  
+			Borrow  
+			History  
+			Inventory  
+		MovieFactory  
+			ComedyFactory  
+			DramaFactory  
+			ClassicFactory  
+			Movie  
+				ComedyMovie  
+				DramaMovie  
+				ClassicMovie  
+4.2 Use Cases  
+Check Inventory  
+Access Customer History  
+Borrow a Movie  
+Return a Movie  
+4.3 Program Flow  
+5. Error Handling  
+6. Main Description    
+7. Header Files  
+8. Future Extensions  	
 
 1. Overview
 A local movie rental store wants an automated system that tracks inventory and customer transactions. We have been hired to design this system to meet all of the requirements outlined by the owners. 
